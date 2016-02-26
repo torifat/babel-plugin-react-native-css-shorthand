@@ -14,7 +14,7 @@ export default function ({types: t}) {
     visitor: {
       ObjectProperty(path) {
         const {key, value} = path.node;
-        if (supportedProperties.includes(key.name) && value.type === 'ArrayExpression') {
+        if (supportedProperties.indexOf(key.name) > -1 && value.type === 'ArrayExpression') {
           // StyleSheet check, don't know if this one is efficient enough
           let callee;
           path.find(function (path) {

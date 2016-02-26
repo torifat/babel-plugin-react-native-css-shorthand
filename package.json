@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-native-css-shorthand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A babel plugin for React Native CSS Shorthand Syntax",
   "main": "lib/",
   "scripts": {
